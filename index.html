@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perpetual Ndegwa & Company Advocates</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-[#e3e4e7]">
+    <!-- Navigation -->
+    <nav
+      x-data="{ isOpen: false }"
+      class="bg-white shadow-lg fixed w-full z-50"
+    >
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+          <div>
+            <h1 class="text-2xl font-bold text-[#a951ae]">PNDEGWA & CO.</h1>
+          </div>
+
+          <!-- Desktop Nav -->
+          <div class="hidden md:flex space-x-6 items-center">
+            <div class="flex space-x-4 text-sm">
+              <span class="text-gray-600"
+                ><i class="fas fa-phone mr-2"></i>0737-959174</span
+              >
+              <span class="text-gray-600"
+                ><i class="fas fa-envelope mr-2"></i
+                >perpetualndegwa@pndegwaadvocates.co.ke</span
+              >
+            </div>
+            <div class="flex space-x-4 ml-6">
+              <a
+                href="#"
+                class="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="#"
+                class="w-8 h-8 rounded-full bg-blue-400 flex items-center justify-center text-white"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a
+                href="#"
+                class="w-8 h-8 rounded-full bg-red-600 flex items-center justify-center text-white"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="#"
+                class="w-8 h-8 rounded-full bg-blue-800 flex items-center justify-center text-white"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a
+                href="#"
+                class="w-8 h-8 rounded-full bg-green-600 flex items-center justify-center text-white"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <button @click="isOpen = !isOpen" class="md:hidden">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div x-show="isOpen" class="md:hidden pb-4 space-y-4">
+          <div class="flex flex-col space-y-2 text-sm">
+            <span class="text-gray-600"
+              ><i class="fas fa-phone mr-2"></i>0737-959174</span
+            >
+            <span class="text-gray-600"
+              ><i class="fas fa-envelope mr-2"></i
+              >perpetualndegwa@pndegwaadvocates.co.ke</span
+            >
+          </div>
+          <div class="flex space-x-4">
+            <a
+              href="#"
+              class="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              href="#"
+              class="w-8 h-8 rounded-full bg-blue-400 flex items-center justify-center text-white"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              href="#"
+              class="w-8 h-8 rounded-full bg-red-600 flex items-center justify-center text-white"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="#"
+              class="w-8 h-8 rounded-full bg-blue-800 flex items-center justify-center text-white"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a
+              href="#"
+              class="w-8 h-8 rounded-full bg-green-600 flex items-center justify-center text-white"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- =========== HOME SECTION ========== -->
+    <section class="home">
+      <div class="home-content">
+        <div class="left">
+          <div class="left-heading">
+            <h1>
+              Actuating humane <br />
+              legal sensible solutions
+            </h1>
+          </div>
+          <div class="left-text">
+            <p>
+              Perpetual Ndegwa & Company Advocates is a law firm based in
+              Nairobi offering innovative legal solutions to the vast legal
+              problems both locally and internationally. Our main focus is
+              conveyancing family, criminal law and employment law
+            </p>
+          </div>
+          <button>Request a Callback</button>
+        </div>
+        <div class="right">
+          <img src="images/intro.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- ========= HOME END ========== -->
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <section class="about">
+      <div class="about-content">
+        <div class="left">
+          <img src="images/lawyer.jpg" alt="" />
+        </div>
+        <div class="right">
+          <div class="heading">
+            <h2>ABOUT US</h2>
+          </div>
+          <div class="text">
+            <p>
+              Perpetual Ndegwa & Company Advocates is a dynamic law firm
+              headquarter in Nairobi, Kenya. With a commitment to providing
+              forward-thinking legal solutions, we address a wide array of legal
+              challenges both locally and internationally. Our firm specializes
+              in key practice areas including commercial and corporate law,
+              conveyancing, family law, criminal law, and employment law. Our
+              mission is to deliver compassionate and pragmatic legal
+              resolutions, while our vision propels us to be the leading choice
+              for legal services through innovative approaches to practice.
+            </p>
+          </div>
+          <div class="more">
+            <span><i>Mission: </i></span>
+            <p>Empowering Humanity through Pragmatic Legal Solutions</p>
+
+            <span><i>Vision: </i></span>
+            <p>
+              To Emerge as the Premier Destination for Legal Services in East
+              Africa, Fuelled by Dynamic and Inventive Approaches to Practice.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== ABOUT END ========== -->
+    <!-- =============== Practice areas =============== -->
+    <section class="practice-section">
+      <div class="practice-container">
+        <div class="splide" id="practice-carousel">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <i class="ri-home-smile-line"></i>
+                <h3>Conveyancing</h3>
+                <p>
+                  Our experienced team facilitates seamless property
+                  transactions by providing expert guidance in property
+                  transfers, acquisitions, leases, and mortgages. We ensure
+                  clients' interests are safeguarded throughout the entire
+                  process
+                </p>
+              </li>
+              <li class="splide__slide">
+                <i class="fas fa-people-arrows"></i> 
+                <h3>Family Law</h3>
+                <p>
+                  We offer comprehensive family law services, including divorce,
+                  chi custody, adoption, and property settlements. Our
+                  empathetic approach and leg expertise provide clients with
+                  sound solutions during emotionally challenging times.
+                </p>
+              </li>
+              <li class="splide__slide">
+                <i class="ri-shield-cross-line"></i>
+                <h3>Criminal Law</h3>
+                <p>
+                  With a staunch commitment to justice, we provide legal
+                  representation for individuals facing criminal charges. Our
+                  knowledgeable attorne strive to uphold the rights of our
+                  clients while ensuring a fair and just legal process.
+                </p>
+              </li>
+              <li class="splide__slide">
+                <i class="ri-book-2-line"></i>
+                <h3>Law of Succession</h3>
+                <p>
+                  Our firm assists clients in matters related to inheritance, wi
+                  trusts, and estate planning. We work to preserve legacies and
+                  fulfil the wishes individuals in accordance with the law.
+                </p>
+              </li>
+              <li class="splide__slide">
+                <i class="ri-file-paper-2-line"></i>
+                <h3>Compliance & Audits</h3>
+                <p>
+                  We support businesses and individuals in navigating complex
+                  legal landscapes. Our team conducts comprehensive legal audits
+                  and ensures regulatory compliance, minimizing legal risks and
+                  fostering ethical practices.
+                </p>
+              </li>
+              <li class="splide__slide">
+                <i class="ri-briefcase-line"></i>
+                <h3>Employment Law</h3>
+                <p>
+                  We offer expert advice on labour disputes, employment contract
+                  and workplace regulations. Our aim is to create harmonious
+                  employer-employee relationships while safeguarding the rights
+                  of both parties.
+                </p>
+              </li>
+              <li class="splide__slide">
+                <i class="ri-building-line"></i>
+                <h3>Corporate Law</h3>
+                <p>
+                  Our legal experts provide strategic guidance to businesses,
+                  assisting in formation, contracts, mergers, acquisitions, and
+                  general corporate governance. We contribute to the growth and
+                  stability of enterprises across sectors.
+                </p>
+              </li>
+              <li class="splide__slide">
+                <i class="ri-hand-heart-line"></i>
+                <h3>Legal Aid</h3>
+                <p>
+                  Committed to social responsibility, we provide legal aid
+                  services to tho who may not have easy access to legal
+                  representation. Our aim is to ensure justice is accessible to
+                  all, irrespective of their socio-economic background.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#701475] text-white py-12">
+      <div class="container mx-auto px-4 grid md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+          <p class="mb-2">5th Floor, Top Plaza, Nairobi</p>
+          <p class="mb-2">0737-959174</p>
+          <p>perpetualndegwa@pndegwaadvocates.co.ke</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-gray-300">About Us</a></li>
+            <li><a href="#" class="hover:text-gray-300">Services</a></li>
+            <li><a href="#" class="hover:text-gray-300">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+          <div class="flex space-x-4">
+            <a
+              href="#"
+              class="w-8 h-8 rounded-full bg-white text-[#a951ae] flex items-center justify-center"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              href="#"
+              class="w-8 h-8 rounded-full bg-white text-[#a951ae] flex items-center justify-center"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              href="#"
+              class="w-8 h-8 rounded-full bg-white text-[#a951ae] flex items-center justify-center"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        new Splide("#practice-carousel", {
+          type: "loop", // Infinite loop
+          perPage: 8, // Show all items at once
+          perMove: 1, // Move only 1 per transition
+          autoplay: true, // Enable autoplay
+          interval: 3000, // Every 3 seconds
+          speed: 800, // Smooth transition
+          gap: "20px", // Space between squares
+          breakpoints: {
+            1024: { perPage: 4 },
+            768: { perPage: 2 },
+            480: { perPage: 1 },
+          },
+        }).mount();
+      });
+    </script>
+  </body>
+</html>
