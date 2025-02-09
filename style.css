@@ -43,7 +43,7 @@ nav button {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 4rem 2rem;
+  padding: 6rem 2rem;
   background: #fff;
 }
 
@@ -182,6 +182,7 @@ nav button {
 /* Responsive Design */
 @media (max-width: 768px) {
   .home-content, .about-content {
+    padding: 4rem 0;
       flex-direction: column;
       text-align: center;
   }

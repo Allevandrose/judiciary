@@ -14,7 +14,7 @@
   </head>
   <body class="bg-[#e3e4e7]">
     <!-- Navigation -->
-    <nav x-data="{ isOpen: false }" class="bg-white shadow-lg fixed w-full z-50">
+    <nav x-data="{ isOpen: false }" class="bg-white shadow-lg fixed w-full z-50 ">
       <div class="container mx-auto px-4">
         <div class="flex justify-between items-center py-4">
           <div>
@@ -57,8 +57,36 @@
         </div>
       </div>
     </nav>
+    <!-- second nav -->
+      <!-- Main Navigation -->
+    <nav x-data="{ isOpen: false }" class="bg-[#701475] text-white mt-16 fixed w-full z-40 shadow-md mb-16">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+          <div class="hidden md:flex space-x-8">
+            <a href="#home" class="hover:text-gray-300">Home</a>
+            <a href="#about" class="hover:text-gray-300">About</a>
+            <a href="#practice" class="hover:text-gray-300">Practice Areas</a>
+            <a href="#values" class="hover:text-gray-300">Values</a>
+            <a href="#contact" class="hover:text-gray-300">Contact</a>
+          </div>
+          <button @click="isOpen = !isOpen" class="md:hidden">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div x-show="isOpen" class="md:hidden pb-4 space-y-4 text-center">
+          <a href="#home" class="block py-2 hover:bg-[#5a105e]">Home</a>
+          <a href="#about" class="block py-2 hover:bg-[#5a105e]">About</a>
+          <a href="#practice" class="block py-2 hover:bg-[#5a105e]">Practice Areas</a>
+          <a href="#values" class="block py-2 hover:bg-[#5a105e]">Values</a>
+          <a href="#contact" class="block py-2 hover:bg-[#5a105e]">Contact</a>
+        </div>
+      </div>
+    </nav>
     <!-- =========== HOME SECTION ========== -->
-    <section class="home">
+    <section id="home" class="home">
       <div class="home-content">
         <div class="left">
           <div class="left-heading">
@@ -79,7 +107,7 @@
     <!-- ========= HOME END ========== -->
 
     <!-- ========== ABOUT SECTION ========== -->
-    <section class="about">
+    <section id="about" class="about">
       <div class="about-content">
         <div class="left">
           <img src="images/lawyer.jpg" alt="" />
@@ -105,7 +133,7 @@
     <!-- ========== ABOUT END ========== -->
 
     <!-- =============== Practice areas =============== -->
-    <section class="practice-section">
+    <section id="practice" class="practice-section">
       <h3 style="text-align: center; color: #701475;">Our Practices</h3>
       <div class="practice-container">
         <div class="splide" id="practice-carousel">
@@ -159,7 +187,7 @@
     <!--========== Practice end========== -->
 
  <!-- Core Values Section -->
- <section class="core-values">
+ <section id="values" class="core-values">
   <h2 class="start">Our Core Values</h2>
   <div class="values-container">
       <div class="value-card">
@@ -197,7 +225,7 @@
 
 
 <!-- Contact Form -->
-<section class="contact-form">
+<section id="contact" class="contact-form">
   <h2 class="start">Contact Us</h2>
   <form>
       <div class="form-group">
