@@ -13,78 +13,83 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="bg-[#e3e4e7]">
-    <!-- Navigation -->
-    <nav x-data="{ isOpen: false }" class="bg-white shadow-lg fixed w-full z-50 ">
-      <div class="container mx-auto px-4">
-        <div class="flex justify-between items-center py-4">
-          <div>
-            <h1 class="text-2xl font-bold text-[#a951ae]">PNDEGWA & CO.</h1>
-          </div>
-          <!-- Desktop Nav -->
-          <div class="hidden md:flex space-x-6 items-center">
-            <div class="flex space-x-4 text-sm">
-              <span class="text-gray-600"><i class="fas fa-phone mr-2"></i>0737-959174</span>
-              <span class="text-gray-600"><i class="fas fa-envelope mr-2"></i>perpetualndegwa@pndegwaadvocates.co.ke</span>
-            </div>
-            <div class="flex space-x-4 ml-6">
-              <a href="#" class="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white"><i class="fab fa-facebook-f"></i></a>
-              <a href="#" class="w-8 h-8 rounded-full bg-blue-400 flex items-center justify-center text-white"><i class="fab fa-twitter"></i></a>
-              <a href="#" class="w-8 h-8 rounded-full bg-red-600 flex items-center justify-center text-white"><i class="fab fa-instagram"></i></a>
-              <a href="#" class="w-8 h-8 rounded-full bg-blue-800 flex items-center justify-center text-white"><i class="fab fa-linkedin-in"></i></a>
-              <a href="#" class="w-8 h-8 rounded-full bg-green-600 flex items-center justify-center text-white"><i class="fab fa-whatsapp"></i></a>
-            </div>
-          </div>
-          <!-- Mobile Menu Button -->
-          <button @click="isOpen = !isOpen" class="md:hidden">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-            </svg>
-          </button>
-        </div>
-        <!-- Mobile Menu -->
-        <div x-show="isOpen" class="md:hidden pb-4 space-y-4">
-          <div class="flex flex-col space-y-2 text-sm">
-            <span class="text-gray-600"><i class="fas fa-phone mr-2"></i>0737-959174</span>
-            <span class="text-gray-600"><i class="fas fa-envelope mr-2"></i>perpetualndegwa@pndegwaadvocates.co.ke</span>
-          </div>
-          <div class="flex space-x-4">
-            <a href="#" class="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="w-8 h-8 rounded-full bg-blue-400 flex items-center justify-center text-white"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="w-8 h-8 rounded-full bg-red-600 flex items-center justify-center text-white"><i class="fab fa-instagram"></i></a>
-            <a href="#" class="w-8 h-8 rounded-full bg-blue-800 flex items-center justify-center text-white"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#" class="w-8 h-8 rounded-full bg-green-600 flex items-center justify-center text-white"><i class="fab fa-whatsapp"></i></a>
-          </div>
-        </div>
+    <div class="flex fixed w-full z-50">
+      <!-- Logo or Text (Responsive) -->
+      <div class="flex items-center justify-center bg-white shadow-lg" style="width: 300px;">
+        <img src="images/logoz.png" alt="Logo" class="h-16 hidden md:block" />
+        <span class="md:hidden font-bold text-[#701475] text-lg">PNDEGWA & CO.</span>
       </div>
-    </nav>
-    <!-- second nav -->
-      <!-- Main Navigation -->
-    <nav x-data="{ isOpen: false }" class="bg-[#701475] text-white mt-16 fixed w-full z-40 shadow-md mb-16">
-      <div class="container mx-auto px-4">
-        <div class="flex justify-between items-center py-4">
-          <div class="hidden md:flex space-x-8">
-            <a href="#home" class="hover:text-gray-300">Home</a>
-            <a href="#about" class="hover:text-gray-300">About</a>
-            <a href="#practice" class="hover:text-gray-300">Practice Areas</a>
-            <a href="#values" class="hover:text-gray-300">Values</a>
-            <a href="#contact" class="hover:text-gray-300">Contact</a>
+    
+      <!-- Navigation Bars -->
+      <div class="flex-1">
+        <!-- First Navbar -->
+        <nav x-data="{ isOpen: false }" class="bg-white shadow-lg">
+          <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+              <div class="hidden md:flex space-x-6 items-center">
+                <div class="flex space-x-4 text-sm">
+                  <span class="text-gray-600"><i class="fas fa-phone mr-2"></i>0737-959174</span>
+                  <span class="text-gray-600"><i class="fas fa-envelope mr-2"></i>perpetualndegwa@pndegwaadvocates.co.ke</span>
+                </div>
+                <div class="flex space-x-4 ml-6">
+                  <a href="#" class="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="w-8 h-8 rounded-full bg-blue-400 flex items-center justify-center text-white"><i class="fab fa-twitter"></i></a>
+                  <a href="#" class="w-8 h-8 rounded-full bg-red-600 flex items-center justify-center text-white"><i class="fab fa-instagram"></i></a>
+                  <a href="#" class="w-8 h-8 rounded-full bg-blue-800 flex items-center justify-center text-white"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#" class="w-8 h-8 rounded-full bg-green-600 flex items-center justify-center text-white"><i class="fab fa-whatsapp"></i></a>
+                </div>
+              </div>
+              <button @click="isOpen = !isOpen" class="md:hidden">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+              </button>
+            </div>
+            <div x-show="isOpen" class="md:hidden pb-4 space-y-4">
+              <div class="flex flex-col space-y-2 text-sm">
+                <span class="text-gray-600"><i class="fas fa-phone mr-2"></i>0737-959174</span>
+                <span class="text-gray-600"><i class="fas fa-envelope mr-2"></i>perpetualndegwa@pndegwaadvocates.co.ke</span>
+              </div>
+              <div class="flex space-x-4">
+                <a href="#" class="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="w-8 h-8 rounded-full bg-blue-400 flex items-center justify-center text-white"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="w-8 h-8 rounded-full bg-red-600 flex items-center justify-center text-white"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="w-8 h-8 rounded-full bg-blue-800 flex items-center justify-center text-white"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="w-8 h-8 rounded-full bg-green-600 flex items-center justify-center text-white"><i class="fab fa-whatsapp"></i></a>
+              </div>
+            </div>
           </div>
-          <button @click="isOpen = !isOpen" class="md:hidden">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-            </svg>
-          </button>
-        </div>
-        <!-- Mobile Menu -->
-        <div x-show="isOpen" class="md:hidden pb-4 space-y-4 text-center">
-          <a href="#home" class="block py-2 hover:bg-[#5a105e]">Home</a>
-          <a href="#about" class="block py-2 hover:bg-[#5a105e]">About</a>
-          <a href="#practice" class="block py-2 hover:bg-[#5a105e]">Practice Areas</a>
-          <a href="#values" class="block py-2 hover:bg-[#5a105e]">Values</a>
-          <a href="#contact" class="block py-2 hover:bg-[#5a105e]">Contact</a>
-        </div>
+        </nav>
+    
+        <!-- Second Navbar -->
+        <nav x-data="{ isOpen: false }" class="bg-[#701475] text-white shadow-md">
+          <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+              <div class="hidden md:flex space-x-8">
+                <a href="#home" class="hover:text-gray-300">Home</a>
+                <a href="#about" class="hover:text-gray-300">About</a>
+                <a href="#practice" class="hover:text-gray-300">Practice Areas</a>
+                <a href="#values" class="hover:text-gray-300">Values</a>
+                <a href="#contact" class="hover:text-gray-300">Contact</a>
+              </div>
+              <button @click="isOpen = !isOpen" class="md:hidden">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+              </button>
+            </div>
+            <div x-show="isOpen" class="md:hidden pb-4 space-y-4 text-center">
+              <a href="#home" class="block py-2 hover:bg-[#5a105e]">Home</a>
+              <a href="#about" class="block py-2 hover:bg-[#5a105e]">About</a>
+              <a href="#practice" class="block py-2 hover:bg-[#5a105e]">Practice Areas</a>
+              <a href="#values" class="block py-2 hover:bg-[#5a105e]">Values</a>
+              <a href="#contact" class="block py-2 hover:bg-[#5a105e]">Contact</a>
+            </div>
+          </div>
+        </nav>
       </div>
-    </nav>
+    </div>
+    
     <!-- =========== HOME SECTION ========== -->
     <section id="home" class="home">
       <div class="home-content">
