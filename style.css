@@ -137,6 +137,41 @@ nav button {
   display: block;
   margin-top: 1rem;
 }
+/* Why Choose Us Section */
+.why-choose-us, .main-partner {
+  background: #f9f9f9;
+  padding: 4rem 2rem;
+}
+
+.choose-content, .partner-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.why-choose-us .right, .main-partner .left {
+  flex: 1;
+}
+
+.main-partner .right img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 10px;
+}
+
+.why-choose-us .right h2, .main-partner .left h2 {
+  color: #701475;
+  font-size: 2rem;
+}
+
+.why-choose-us .right p, .main-partner .left p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
 
 /* Practice Areas */
 .practice-section {
@@ -195,6 +230,15 @@ nav button {
 
   .practice-section h3 {
       font-size: 1.8rem;
+  }
+
+  .choose-content, .partner-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .main-partner .right img {
+    max-width: 100%;
   }
 }
 
@@ -332,7 +376,7 @@ nav button {
   font-size: 16px;
 }
 
-button {
+form button {
   background: #701475;
   color: white;
   padding: 10px 15px;
@@ -340,7 +384,7 @@ button {
   border-radius: 5px;
   font-size: 18px;
   cursor: pointer;
-  transition: background 0.3s;
+  transition:0.3s ease-in-out;
 }
 
 button:hover {

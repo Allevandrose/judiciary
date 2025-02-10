@@ -5,11 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Perpetual Ndegwa & Company Advocates</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" />
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="bg-[#e3e4e7]">
@@ -17,88 +29,174 @@
       <!-- Navigation Bars (100% Width on Small Screens) -->
       <div class="flex">
         <!-- Logo Container (Hidden on Small Screens) -->
-        <div class="hidden md:flex items-center justify-center bg-white shadow-lg" style="width: 150px;">
+        <div
+          class="hidden md:flex items-center justify-center bg-white shadow-lg"
+          style="width: 150px"
+        >
           <img src="images/logoz.png" alt="Logo" class="h-16" />
         </div>
-    
+
         <div class="flex-1">
           <!-- First Navbar (Top Bar) -->
           <nav x-data="{ isOpen: false }" class="bg-white shadow-lg w-full">
             <div class="container mx-auto px-4">
               <div class="flex justify-between items-center py-4">
                 <!-- Text Logo (Visible Only on Small Screens) -->
-                <span class="md:hidden font-bold text-[#701475] text-lg">PNDEGWA & CO.</span>
-    
+                <span class="md:hidden font-bold text-[#701475] text-lg"
+                  >PNDEGWA & CO.</span
+                >
+
                 <!-- Contact Info & Social Media Links (Hidden on Small Screens) -->
                 <div class="hidden md:flex space-x-6 items-center">
                   <div class="flex space-x-4 text-sm">
-                    <span class="text-gray-600"><i class="fas fa-phone mr-2"></i>0737-959174</span>
-                    <span class="text-gray-600"><i class="fas fa-envelope mr-2"></i>perpetualndegwa@pndegwaadvocates.co.ke</span>
+                    <span class="text-gray-600"
+                      ><i class="fas fa-phone mr-2"></i>0737-959174</span
+                    >
+                    <span class="text-gray-600"
+                      ><i class="fas fa-envelope mr-2"></i
+                      >perpetualndegwa@pndegwaadvocates.co.ke</span
+                    >
                   </div>
                   <div class="flex space-x-4 ml-6">
-                    <a href="#" class="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="w-8 h-8 rounded-full bg-blue-400 flex items-center justify-center text-white"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="w-8 h-8 rounded-full bg-red-600 flex items-center justify-center text-white"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="w-8 h-8 rounded-full bg-blue-800 flex items-center justify-center text-white"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" class="w-8 h-8 rounded-full bg-green-600 flex items-center justify-center text-white"><i class="fab fa-whatsapp"></i></a>
+                    <a
+                      href="#"
+                      class="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a
+                      href="#"
+                      class="w-8 h-8 rounded-full bg-blue-400 flex items-center justify-center text-white"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                    <a
+                      href="#"
+                      class="w-8 h-8 rounded-full bg-red-600 flex items-center justify-center text-white"
+                      ><i class="fab fa-instagram"></i
+                    ></a>
+                    <a
+                      href="#"
+                      class="w-8 h-8 rounded-full bg-blue-800 flex items-center justify-center text-white"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                    <a
+                      href="#"
+                      class="w-8 h-8 rounded-full bg-green-600 flex items-center justify-center text-white"
+                      ><i class="fab fa-whatsapp"></i
+                    ></a>
                   </div>
                 </div>
-    
+
                 <!-- Mobile Menu Button -->
                 <button @click="isOpen = !isOpen" class="md:hidden">
-                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                  <svg
+                    class="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16m-7 6h7"
+                    />
                   </svg>
                 </button>
               </div>
-    
+
               <!-- Mobile Contact Info & Social Links -->
               <div x-show="isOpen" class="md:hidden pb-4 space-y-4">
                 <div class="flex flex-col space-y-2 text-sm">
-                  <span class="text-gray-600"><i class="fas fa-phone mr-2"></i>0737-959174</span>
-                  <span class="text-gray-600"><i class="fas fa-envelope mr-2"></i>perpetualndegwa@pndegwaadvocates.co.ke</span>
+                  <span class="text-gray-600"
+                    ><i class="fas fa-phone mr-2"></i>0737-959174</span
+                  >
+                  <span class="text-gray-600"
+                    ><i class="fas fa-envelope mr-2"></i
+                    >perpetualndegwa@pndegwaadvocates.co.ke</span
+                  >
                 </div>
                 <div class="flex space-x-4">
-                  <a href="#" class="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white"><i class="fab fa-facebook-f"></i></a>
-                  <a href="#" class="w-8 h-8 rounded-full bg-blue-400 flex items-center justify-center text-white"><i class="fab fa-twitter"></i></a>
-                  <a href="#" class="w-8 h-8 rounded-full bg-red-600 flex items-center justify-center text-white"><i class="fab fa-instagram"></i></a>
-                  <a href="#" class="w-8 h-8 rounded-full bg-blue-800 flex items-center justify-center text-white"><i class="fab fa-linkedin-in"></i></a>
-                  <a href="#" class="w-8 h-8 rounded-full bg-green-600 flex items-center justify-center text-white"><i class="fab fa-whatsapp"></i></a>
+                  <a
+                    href="#"
+                    class="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center text-white"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="w-8 h-8 rounded-full bg-blue-400 flex items-center justify-center text-white"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="w-8 h-8 rounded-full bg-red-600 flex items-center justify-center text-white"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="w-8 h-8 rounded-full bg-blue-800 flex items-center justify-center text-white"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="w-8 h-8 rounded-full bg-green-600 flex items-center justify-center text-white"
+                    ><i class="fab fa-whatsapp"></i
+                  ></a>
                 </div>
               </div>
             </div>
           </nav>
-    
+
           <!-- Second Navbar (Main Navigation) -->
-          <nav x-data="{ isOpen: false }" class="bg-[#701475] text-white shadow-md w-full">
+          <nav
+            x-data="{ isOpen: false }"
+            class="bg-[#701475] text-white shadow-md w-full"
+          >
             <div class="container mx-auto px-4">
               <div class="flex justify-between items-center py-4">
                 <div class="hidden md:flex space-x-8">
                   <a href="#home" class="hover:text-gray-300">Home</a>
                   <a href="#about" class="hover:text-gray-300">About</a>
-                  <a href="#practice" class="hover:text-gray-300">Practice Areas</a>
+                  <a href="#practice" class="hover:text-gray-300"
+                    >Practice Areas</a
+                  >
                   <a href="#values" class="hover:text-gray-300">Values</a>
                   <a href="#contact" class="hover:text-gray-300">Contact</a>
                 </div>
                 <button @click="isOpen = !isOpen" class="md:hidden">
-                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                  <svg
+                    class="w-6 h-6"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16m-7 6h7"
+                    />
                   </svg>
                 </button>
               </div>
               <div x-show="isOpen" class="md:hidden pb-4 space-y-4 text-center">
                 <a href="#home" class="block py-2 hover:bg-[#5a105e]">Home</a>
                 <a href="#about" class="block py-2 hover:bg-[#5a105e]">About</a>
-                <a href="#practice" class="block py-2 hover:bg-[#5a105e]">Practice Areas</a>
-                <a href="#values" class="block py-2 hover:bg-[#5a105e]">Values</a>
-                <a href="#contact" class="block py-2 hover:bg-[#5a105e]">Contact</a>
+                <a href="#practice" class="block py-2 hover:bg-[#5a105e]"
+                  >Practice Areas</a
+                >
+                <a href="#values" class="block py-2 hover:bg-[#5a105e]"
+                  >Values</a
+                >
+                <a href="#contact" class="block py-2 hover:bg-[#5a105e]"
+                  >Contact</a
+                >
               </div>
             </div>
           </nav>
         </div>
       </div>
     </div>
-    
+
     <!-- =========== HOME SECTION ========== -->
     <section id="home" class="home">
       <div class="home-content">
@@ -108,7 +206,10 @@
           </div>
           <div class="left-text">
             <p>
-              Perpetual Ndegwa & Company Advocates is a law firm based in Nairobi offering innovative legal solutions to the vast legal problems both locally and internationally. Our main focus is conveyancing family, criminal law and employment law.
+              Perpetual Ndegwa & Company Advocates is a law firm based in
+              Nairobi offering innovative legal solutions to the vast legal
+              problems both locally and internationally. Our main focus is
+              conveyancing family, criminal law and employment law.
             </p>
           </div>
           <button>Request a Callback</button>
@@ -132,23 +233,75 @@
           </div>
           <div class="text">
             <p>
-              Perpetual Ndegwa & Company Advocates is a dynamic law firm headquartered in Nairobi, Kenya. With a commitment to providing forward-thinking legal solutions, we address a wide array of legal challenges both locally and internationally. Our firm specializes in key practice areas including commercial and corporate law, conveyancing, family law, criminal law, and employment law. Our mission is to deliver compassionate and pragmatic legal resolutions, while our vision propels us to be the leading choice for legal services through innovative approaches to practice.
+              Perpetual Ndegwa & Company Advocates is a dynamic law firm
+              headquartered in Nairobi, Kenya. With a commitment to providing
+              forward-thinking legal solutions, we address a wide array of legal
+              challenges both locally and internationally. Our firm specializes
+              in key practice areas including commercial and corporate law,
+              conveyancing, family law, criminal law, and employment law. Our
+              mission is to deliver compassionate and pragmatic legal
+              resolutions, while our vision propels us to be the leading choice
+              for legal services through innovative approaches to practice.
             </p>
           </div>
           <div class="more">
             <span><i>Mission: </i></span>
             <p>Empowering Humanity through Pragmatic Legal Solutions</p>
             <span><i>Vision: </i></span>
-            <p>To Emerge as the Premier Destination for Legal Services in East Africa, Fuelled by Dynamic and Inventive Approaches to Practice.</p>
+            <p>
+              To Emerge as the Premier Destination for Legal Services in East
+              Africa, Fuelled by Dynamic and Inventive Approaches to Practice.
+            </p>
           </div>
         </div>
       </div>
     </section>
     <!-- ========== ABOUT END ========== -->
+   <!-- ========== WHY CHOOSE US SECTION ========== -->
+<section id="why-choose-us" class="why-choose-us">
+  <div class="choose-content">
+    <div class="right">
+      <div class="heading">
+        <h2>WHY CHOOSE US</h2>
+      </div>
+      <div class="text">
+        <p>
+          With over two years of experience, we have gained the expertise necessary to successfully guide our clients through complex international legal matters. In countless cases, Attorney Langner has demonstrated true mastery in this field, ensuring that our clients receive the highest level of legal support.
+        </p>
+        <p>
+          If you have any questions, simply reach out to us, and our dedicated team will be ready to assist you.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ========== WHY CHOOSE US END ========== -->
 
+<!-- ========== MAIN PARTNER SECTION ========== -->
+<section id="main-partner" class="main-partner">
+  <div class="partner-content">
+    <div class="right">
+      <img src="images/about.jpg" alt="Main Partner" />
+    </div>
+    <div class="left">
+      <div class="heading">
+        <h2>MEET OUR MAIN PARTNER</h2>
+      </div>
+      <div class="text">
+        <p>
+          Our esteemed main partner brings over seven years of legal experience, specializing in a wide range of practice areas. She graduated from Moi University, Kenya, with a distinguished law degree, laying the foundation for her remarkable career.
+        </p>
+        <p>
+          Through her dedication and strategic approach, she has successfully represented clients in both local and international legal matters, ensuring justice and fairness at every step.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ========== MAIN PARTNER END ========== -->
     <!-- =============== Practice areas =============== -->
     <section id="practice" class="practice-section">
-      <h3 style="text-align: center; color: #701475;">Our Practices</h3>
+      <h3 style="text-align: center; color: #701475">Our Practices</h3>
       <div class="practice-container">
         <div class="splide" id="practice-carousel">
           <div class="splide__track">
@@ -156,42 +309,83 @@
               <li class="splide__slide">
                 <i class="ri-home-smile-line"></i>
                 <h3>Conveyancing</h3>
-                <p>Our experienced team facilitates seamless property transactions by providing expert guidance in property transfers, acquisitions, leases, and mortgages. We ensure clients' interests are safeguarded throughout the entire process.</p>
+                <p>
+                  Our experienced team facilitates seamless property
+                  transactions by providing expert guidance in property
+                  transfers, acquisitions, leases, and mortgages. We ensure
+                  clients' interests are safeguarded throughout the entire
+                  process.
+                </p>
               </li>
               <li class="splide__slide">
                 <i class="fas fa-people-arrows"></i>
                 <h3>Family Law</h3>
-                <p>We offer comprehensive family law services, including divorce, child custody, adoption, and property settlements. Our empathetic approach and legal expertise provide clients with sound solutions during emotionally challenging times.</p>
+                <p>
+                  We offer comprehensive family law services, including divorce,
+                  child custody, adoption, and property settlements. Our
+                  empathetic approach and legal expertise provide clients with
+                  sound solutions during emotionally challenging times.
+                </p>
               </li>
               <li class="splide__slide">
                 <i class="ri-shield-cross-line"></i>
                 <h3>Criminal Law</h3>
-                <p>With a staunch commitment to justice, we provide legal representation for individuals facing criminal charges. Our knowledgeable attorneys strive to uphold the rights of our clients while ensuring a fair and just legal process.</p>
+                <p>
+                  With a staunch commitment to justice, we provide legal
+                  representation for individuals facing criminal charges. Our
+                  knowledgeable attorneys strive to uphold the rights of our
+                  clients while ensuring a fair and just legal process.
+                </p>
               </li>
               <li class="splide__slide">
                 <i class="ri-book-2-line"></i>
                 <h3>Law of Succession</h3>
-                <p>Our firm assists clients in matters related to inheritance, wills, trusts, and estate planning. We work to preserve legacies and fulfil the wishes of individuals in accordance with the law.</p>
+                <p>
+                  Our firm assists clients in matters related to inheritance,
+                  wills, trusts, and estate planning. We work to preserve
+                  legacies and fulfil the wishes of individuals in accordance
+                  with the law.
+                </p>
               </li>
               <li class="splide__slide">
                 <i class="ri-file-paper-2-line"></i>
                 <h3>Compliance & Audits</h3>
-                <p>We support businesses and individuals in navigating complex legal landscapes. Our team conducts comprehensive legal audits and ensures regulatory compliance, minimizing legal risks and fostering ethical practices.</p>
+                <p>
+                  We support businesses and individuals in navigating complex
+                  legal landscapes. Our team conducts comprehensive legal audits
+                  and ensures regulatory compliance, minimizing legal risks and
+                  fostering ethical practices.
+                </p>
               </li>
               <li class="splide__slide">
                 <i class="ri-briefcase-line"></i>
                 <h3>Employment Law</h3>
-                <p>We offer expert advice on labour disputes, employment contracts, and workplace regulations. Our aim is to create harmonious employer-employee relationships while safeguarding the rights of both parties.</p>
+                <p>
+                  We offer expert advice on labour disputes, employment
+                  contracts, and workplace regulations. Our aim is to create
+                  harmonious employer-employee relationships while safeguarding
+                  the rights of both parties.
+                </p>
               </li>
               <li class="splide__slide">
                 <i class="ri-building-line"></i>
                 <h3>Corporate Law</h3>
-                <p>Our legal experts provide strategic guidance to businesses, assisting in formation, contracts, mergers, acquisitions, and general corporate governance. We contribute to the growth and stability of enterprises across sectors.</p>
+                <p>
+                  Our legal experts provide strategic guidance to businesses,
+                  assisting in formation, contracts, mergers, acquisitions, and
+                  general corporate governance. We contribute to the growth and
+                  stability of enterprises across sectors.
+                </p>
               </li>
               <li class="splide__slide">
                 <i class="ri-hand-heart-line"></i>
                 <h3>Legal Aid</h3>
-                <p>Committed to social responsibility, we provide legal aid services to those who may not have easy access to legal representation. Our aim is to ensure justice is accessible to all, irrespective of their socio-economic background.</p>
+                <p>
+                  Committed to social responsibility, we provide legal aid
+                  services to those who may not have easy access to legal
+                  representation. Our aim is to ensure justice is accessible to
+                  all, irrespective of their socio-economic background.
+                </p>
               </li>
             </ul>
           </div>
@@ -200,63 +394,92 @@
     </section>
     <!--========== Practice end========== -->
 
- <!-- Core Values Section -->
- <section id="values" class="core-values">
-  <h2 class="start">Our Core Values</h2>
-  <div class="values-container">
-      <div class="value-card">
+    <!-- Core Values Section -->
+    <section id="values" class="core-values">
+      <h2 class="start">Our Core Values</h2>
+      <div class="values-container">
+        <div class="value-card">
           <i class="fas fa-balance-scale"></i>
           <h3>Honesty</h3>
-          <p>We uphold the highest ethical standards, maintaining transparency and sincerity in all our interactions and endeavors.</p>
-      </div>
-      <div class="value-card">
+          <p>
+            We uphold the highest ethical standards, maintaining transparency
+            and sincerity in all our interactions and endeavors.
+          </p>
+        </div>
+        <div class="value-card">
           <i class="fas fa-lightbulb"></i>
           <h3>Innovation</h3>
-          <p>Embracing cutting-edge ideas and creative solutions, we continuously seek innovative approaches to deliver exceptional legal services.</p>
-      </div>
-      <div class="value-card">
+          <p>
+            Embracing cutting-edge ideas and creative solutions, we continuously
+            seek innovative approaches to deliver exceptional legal services.
+          </p>
+        </div>
+        <div class="value-card">
           <i class="fas fa-shield-alt"></i>
           <h3>Reliability</h3>
-          <p>Our clients trust us to provide dependable legal guidance. We are committed to being a steadfast partner throughout their legal journey.</p>
-      </div>
-      <div class="value-card">
+          <p>
+            Our clients trust us to provide dependable legal guidance. We are
+            committed to being a steadfast partner throughout their legal
+            journey.
+          </p>
+        </div>
+        <div class="value-card">
           <i class="fas fa-user-shield"></i>
           <h3>Integrity</h3>
-          <p>We adhere to a strong moral compass, conducting ourselves with integrity and professionalism in every aspect of our practice.</p>
-      </div>
-      <div class="value-card">
+          <p>
+            We adhere to a strong moral compass, conducting ourselves with
+            integrity and professionalism in every aspect of our practice.
+          </p>
+        </div>
+        <div class="value-card">
           <i class="fas fa-tasks"></i>
           <h3>Accountability</h3>
-          <p>We take responsibility for our actions and decisions, ensuring that our clients' needs are met, and their interests are safeguarded.</p>
-      </div>
-      <div class="value-card">
+          <p>
+            We take responsibility for our actions and decisions, ensuring that
+            our clients' needs are met, and their interests are safeguarded.
+          </p>
+        </div>
+        <div class="value-card">
           <i class="fas fa-eye"></i>
           <h3>Transparency</h3>
-          <p>Open communication and transparency are integral to our practice. We ensure that our clients are well-informed and involved in every step of their legal proceedings.</p>
+          <p>
+            Open communication and transparency are integral to our practice. We
+            ensure that our clients are well-informed and involved in every step
+            of their legal proceedings.
+          </p>
+        </div>
       </div>
-  </div>
-</section>
+    </section>
 
-
-<!-- Contact Form -->
-<section id="contact" class="contact-form">
-  <h2 class="start">Contact Us</h2>
-  <form>
-      <div class="form-group">
+    <!-- Contact Form -->
+    <section id="contact" class="contact-form">
+      <h2 class="start">Contact Us</h2>
+      <form>
+        <div class="form-group">
           <label for="name">Name</label>
-          <input type="text" id="name" placeholder="Enter your name" required>
-      </div>
-      <div class="form-group">
+          <input type="text" id="name" placeholder="Enter your name" required />
+        </div>
+        <div class="form-group">
           <label for="email">Email</label>
-          <input type="email" id="email" placeholder="Enter your email" required>
-      </div>
-      <div class="form-group">
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="form-group">
           <label for="message">Message</label>
-          <textarea id="message" rows="4" placeholder="Write your message" required></textarea>
-      </div>
-      <button type="submit">Send Message</button>
-  </form>
-</section>
+          <textarea
+            id="message"
+            rows="4"
+            placeholder="Write your message"
+            required
+          ></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
 
     <!-- Footer -->
     <footer class="bg-[#701475] text-white py-12">
@@ -278,9 +501,21 @@
         <div>
           <h3 class="text-xl font-bold mb-4">Follow Us</h3>
           <div class="flex space-x-4">
-            <a href="#" class="w-8 h-8 rounded-full bg-white text-[#a951ae] flex items-center justify-center"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="w-8 h-8 rounded-full bg-white text-[#a951ae] flex items-center justify-center"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="w-8 h-8 rounded-full bg-white text-[#a951ae] flex items-center justify-center"><i class="fab fa-linkedin-in"></i></a>
+            <a
+              href="#"
+              class="w-8 h-8 rounded-full bg-white text-[#a951ae] flex items-center justify-center"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              href="#"
+              class="w-8 h-8 rounded-full bg-white text-[#a951ae] flex items-center justify-center"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              href="#"
+              class="w-8 h-8 rounded-full bg-white text-[#a951ae] flex items-center justify-center"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
           </div>
         </div>
       </div>
